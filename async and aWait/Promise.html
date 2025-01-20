@@ -1,0 +1,22 @@
+<script>
+  /*
+  Pending:
+  Resolve: thren()
+  Reject: catch()
+  */
+
+  let p1 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      //console.log('Data Fetched Successfully...!!');
+      //resolve('Deepak: 12345');
+      console.log('Logic to fetch the data: Failure!');
+      reject();
+    }, 5000)
+  });
+  p1.then((data) => {
+    console.log('Processn the received data: ', data)
+  }).catch(() => {
+    console.log('Error Occured while fetching data');
+  });
+
+</script>
